@@ -1,0 +1,12 @@
+Search for system configuration folder of any Unix system, then for hostname.
+
+/etc/hostname
+
+Modify the entry 
+
+vi /etc/hostname
+and 
+vi /etc/hosts
+close file
+
+and restart the system

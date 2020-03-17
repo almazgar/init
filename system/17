@@ -1,0 +1,5 @@
+ssh guest@127.0.0.1 -p 2222
+
+in virtual machine :
+setting - network - NAT - advanced - port Forwarding - Rule 1 - Protocol (TCP) - Host Port 2222 - Guest port 22
+guest login

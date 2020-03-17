@@ -1,0 +1,5 @@
+systemctl status ssh | grep PID 
+or
+systemctl status ssh | grep PID | awk '{print $3}'
+or
+cat /var/run/sshd.pid

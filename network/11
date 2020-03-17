@@ -1,0 +1,12 @@
+Run traceroute slash16.org, line 1 is the local IP adress, then line 2 is the NAT router who's remaping the local IP to a public IP pointing to dc3, the host of our public IP.
+is in line 3 
+- 1 : Local IP
+- 2 : NAT IP  *****
+- 3 : Public IP
+
+ 1  192.168.30.1 (192.168.30.1)  1.437 ms  1.082 ms  1.025 ms
+
+ 2  192.168.2.9 (192.168.2.9)  0.341 ms  0.281 ms  0.261 ms NAT
+
+ 3  83-69-219-253.in-addr.mastertelecom.ru (83.69.219.253)  3.591 ms  2.283 ms  2.948 ms
+

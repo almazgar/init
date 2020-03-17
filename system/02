@@ -1,0 +1,7 @@
+hostname <new_name>
+
+example
+hostname Almaz
+check
+hostname
+Almaz

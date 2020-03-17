@@ -1,0 +1,3 @@
+ifconfig en1 | grep ether | awk '{print $2}'
+or
+networksetup -getmacaddress 'Wi-Fi' | awk '{print $3}'

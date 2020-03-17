@@ -1,0 +1,4 @@
+Graphical : write your login and password when asked
+
+SSH : ssh <user>@<ip> -p 2222 
+then put password when asked

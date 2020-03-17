@@ -1,0 +1,4 @@
+ifconfig en0 | grep "inet " | awk '{print $2}'
+
+result:
+192.168.29.87

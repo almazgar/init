@@ -1,0 +1,9 @@
+tail -f /var/log/syslog &
+
+
+Running Bash Commands in the Background the Right Way [Linux]:
+
+If you want to push a command into the background, using & at the end is an easy way to do that. It comes with a catch, though. Using & doesn’t disconnect the command away from you; it just pushes it in the background so you can continue using a terminal.
+
+command &
+When the terminal session is closed, the command ends. Using & is good if you need to push something off for a bit, but don’t expect it to continue forever.

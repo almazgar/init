@@ -1,0 +1,10 @@
+#systemctl list-unit-files --type=service | grep "enabled" | awk -F'.service' '{print $1}'
+
+Example :
+
+anacron.service
+apparmor.service
+autovt@service
+avahi-daemon.service
+console-setup.service
+cron.service

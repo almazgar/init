@@ -1,0 +1,29 @@
+1)A script which displays the list of files from the folder given as parameter, sorted by size
+ls -sh $1/* | sort -h
+
+При использовании специального ключа -f утилита tail следит за файлом: новые строки (добавляемые в конец файла другим процессом) автоматически выводятся на экран в реальном времени. Это особенно удобно для слежения за журналами
+tail -f /var/log/messages
+
+2)cleaning cache
+
+#!/bin/bash
+​du -sh ~/Library
+if [ -z '((find ~/Library -name "*42_cache*" 2> /dev/null))' ]
+then
+	echo "Cache is empty! Nothing to be done."
+else
+	read -p "Clean cache? (y/n): " item case "$item"
+	in y|Y|yes) rm -rf ~/Library/*42_cache* 2> /dev/null
+	echo "Complite. Cache is empty!"
+	2> /dev/null 
+		;;
+	n|N|no) echo "Exit"
+	exit 1 	
+		;;
+	*) echo "Nothing to be done" 	
+		;;
+	esac
+fi
+
+3)Display "L'amour est pour toujours"
+echo "L'amour est pour toujours"

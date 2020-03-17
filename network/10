@@ -1,0 +1,36 @@
+traceroute slash16.org
+
+result:
+traceroute slash16.org
+traceroute: Warning: slash16.org has multiple addresses; using 143.204.238.6
+traceroute to slash16.org (143.204.238.6), 64 hops max, 52 byte packets
+ 1  192.168.30.1 (192.168.30.1)  1.437 ms  1.082 ms  1.025 ms
+ 2  192.168.2.9 (192.168.2.9)  0.341 ms  0.281 ms  0.261 ms
+ 3  83-69-219-253.in-addr.mastertelecom.ru (83.69.219.253)  3.591 ms  2.283 ms  2.948 ms
+ 4  mail.neoresurs.ru (217.67.176.130)  0.589 ms  0.554 ms  0.473 ms
+ 5  217-67-176-205.in-addr.mastertelecom.ru (217.67.176.205)  1.781 ms  1.557 ms  1.472 ms
+ 6  ae11-227.rt.mr.msk.ru.retn.net (87.245.253.69)  1.283 ms  1.334 ms  1.328 ms
+ 7  ae8-10.rt.irx.fkt.de.retn.net (87.245.232.139)  38.462 ms
+    ae1-5.rt.irx.fkt.de.retn.net (87.245.232.244)  37.511 ms  37.496 ms
+ 8  * * *
+ 9  ffm-b1-link.telia.net (213.248.68.62)  46.072 ms  38.350 ms  38.139 ms
+10  ffm-bb3-link.telia.net (62.115.141.240)  43.940 ms
+    ffm-bb2-link.telia.net (62.115.116.165)  38.138 ms
+    ffm-bb3-link.telia.net (62.115.137.128)  37.610 ms
+11  kbn-bb3-link.telia.net (62.115.114.92)  38.720 ms  56.072 ms
+    kbn-bb4-link.telia.net (62.115.114.94)  40.646 ms
+12  kbn-b3-link.telia.net (62.115.121.17)  43.212 ms  38.772 ms
+    kbn-b3-link.telia.net (62.115.142.207)  41.516 ms
+13  amazon-ic-332786-kbn-b3.c.telia.net (213.248.86.145)  37.812 ms  45.565 ms  42.096 ms
+14  52.93.139.68 (52.93.139.68)  43.720 ms
+    52.93.139.84 (52.93.139.84)  38.838 ms
+    52.93.139.20 (52.93.139.20)  40.225 ms
+15  52.93.139.237 (52.93.139.237)  37.717 ms
+    52.93.139.151 (52.93.139.151)  37.777 ms
+    52.93.139.153 (52.93.139.153)  37.742 ms
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  server-143-204-238-6.cph50.r.cloudfront.net (143.204.238.6)  37.723 ms  37.521 ms  37.718 ms

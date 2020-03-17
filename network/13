@@ -1,0 +1,35 @@
+ ifconfig en0 | grep "inet " | awk '{print $2}'
+ result: 192.168.29.87
+
+after search result for 192.168.29.87  
+
+ dig -x 192.168.29.87
+
+result:
+
+; <<>> DiG 9.8.3-P1 <<>> -x 192.168.29.87
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3203
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;87.29.168.192.in-addr.arpa.    IN      PTR
+
+;; ANSWER SECTION:
+87.29.168.192.in-addr.arpa. 604800 IN   PTR     ox-m5.21-school.ru.
+
+;; AUTHORITY SECTION:
+168.192.in-addr.arpa.   604800  IN      NS      ns-1.21-school.ru.
+
+;; ADDITIONAL SECTION:
+ns-1.21-school.ru.      604800  IN      A       192.168.50.2
+
+;; Query time: 1 msec
+;; SERVER: 192.168.50.2#53(192.168.50.2)
+;; WHEN: Mon Oct 21 18:31:13 2019
+;; MSG SIZE  rcvd: 111
+
+ANSWER
+ox-m5.21-school.ru.
+

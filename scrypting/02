@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Enter user login"
+read user
+kill -9$(pgrep -u $user)
+deluser --remove-all-files $user

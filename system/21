@@ -1,0 +1,3 @@
+cat /etc/passwd | grep '/home/' | awk -F':' '{print $1}'
+or 
+getent passwd {1000..65535} | cut -d ':' -f1
